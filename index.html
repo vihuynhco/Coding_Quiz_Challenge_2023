@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web API Coding Quiz Challenge</title>
+   <link rel="stylesheet" href="./assets/css/reset.css"/> 
+    <link rel="stylesheet" href="./assets/css/style.css"/>
+   
+</head>
+
+<body>
+    <header>
+      <h2 id= "view_highscores">View Highscores</h2>
+      <h2 id="time">Time: <span id="timer"></span></h2>
+    </header>
+  <!--initial "show screen"-->
+    <main>
+    <div id="start-container" class="show">
+      <div class="container_start" >
+        <h1>Coding Quiz Challenge</h1>
+          <p>
+            LET'S PLAY!</br> 
+            Answer questions correctly before time runs out.</br>
+            BEWARE!</br> 
+            Incorrect answers will cost you time.</br>
+            DON'T FRET!</br>
+            You can play as many times as you want.
+          </p>
+            <button class="btn" id="start-game">Start Quiz</button>
+      </div>
+    </div>  
+<!--Questions show when start quiz button is "clicked"-->
+      <div id="question_container" class="hide">
+        <div class="container_questions">
+          <div id="question"></div>
+          <div id="answer_buttons" class="btn_grid"></div>
+        </div>
+      </div>
+
+      <div id="end-container" class="hide">
+        <div class="container_end">
+          <div id=score-banner>
+            <h1>All Done!</h1>
+          </div>
+        <form id="initial_form" class="initials">
+          <p>Enter Initials:
+            <input type="text" name="initials" id="initials" class="text-input"/>
+            <button class="btn startend" id="submit-score" type="submit">Submit</button>
+          </p>
+        </form>
+        </div>
+      </div>
+
+      <div id="high_score_container" class="hide">
+        <div class="high-scores-container">
+          <h1 class="high-score">High Scores</h1>
+          <ol id="high-score-list" class="score-list"></ol>
+        <div>
+          <button class="btn" id="go_back">Go Back</button>
+          <button class="btn" id="clear_highscores">Clear High Scores</button>
+        </div>
+      </div>
+  </div>
+
+  <div class="hide" id="correct">
+    <h2>Correct!</h2>
+  </div>
+  <div class="hide" id="wrong">
+    <h2>Wrong!</h2>
+  </div>
+  </main>
+  <script src="./assets/js/script.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,165 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+  
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: whitesmoke;
+    padding: 10px;
+    margin: 0;
+    display: flex;
+}
+
+
+  header {
+    display: flex;
+    justify-content:space-evenly;
+    padding: 5px;
+    font-size: 13px;
+}
+
+#view_highscores:hover {
+    cursor:pointer;
+    box-shadow: lightblue;
+    transition: transform 75ms;
+    transform: scale(1.10);
+}
+
+header h2 {
+    display: inline;
+    font-size: 15px;
+  
+}
+
+.timer {
+
+    font-size: 15px;
+    padding-right: 25px;
+}
+
+p {
+    font-size: 15px;
+    font-style: bold;
+    text-align: center;
+    padding: 5px;
+}
+
+
+  
+ h1, h2{
+    font-size: 30px;
+    height: 30px;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+ }
+
+  .questions {
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 40px 20px;
+    margin: auto;
+  }
+
+
+  .end input {
+    outline: thick; 
+    border-width: 1px;
+    padding: 5px;
+    width: 35%;
+    font-size: 20px;
+    border-radius: 5px;
+  }
+
+  .end input:focus {
+    border: 2px solid black;
+  }
+ /* All Done container*/
+  .show {
+    padding: 10px;
+    margin-top: 20px;
+      display: flex;
+  }
+
+  .hide {
+      display: none;
+  }
+
+  #question {
+    color: black;
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  #high-score {
+      text-align: left;
+  }
+
+  /*Button Style */
+  .btn {
+
+      padding: 10px;
+      border-radius: 10px;
+      border: none;
+      box-shadow: black;
+      margin-top: 10px;
+  }
+
+  .btn:hover {
+      background: whitesmoke;
+      border-radius: 10px;
+      box-shadow: 0 2px grey;
+      cursor: pointer;
+  }
+
+  .btn:active {
+      border: none;
+      outline: none;
+
+  }
+
+  .btn:focus {
+      outline: none;
+  }
+
+ 
+  .btn-grid {
+      display: grid;
+      grid: template rows 4px;
+      grid-gap: 50px;
+      margin: 5px 0;
+  }
+
+
+ .answerbtn {
+     width: 50%;
+     text-align: left;
+     font-size: 20px;
+ }
+
+ /* correct/wrong styling */
+
+ .banner {
+     font-size: 30px;
+     text-align: center;
+
+ }
+
+
+/* highscore */
+ 
+ ol {
+    padding: 10px;
+    list-style-type: number;
+ }
+
+
+li {
+  
+    padding: 10px;
+    font-size: 25px;
+}
+
+
